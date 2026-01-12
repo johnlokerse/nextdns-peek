@@ -2,6 +2,8 @@
 
 NextDNS Peek is a macOS menu bar app that shows your NextDNS stats, recent logs, and allow list in a compact popover (floating window).
 
+[![NextDNS Peek Screenshot](NextDNSMenuBarApp.png)](NextDNSMenuBarApp.png)
+
 ## Features
 
 - Menu bar app with a SwiftUI popover.
