@@ -45,7 +45,7 @@
 - Created: None.
 - Deleted: `ExportOptions.plist`.
 
-Simplified GitHub Action workflow to use ad-hoc signing for personal and technical audience use, removing the requirement for Apple Developer Program membership. Added installation instructions to README.
+Simplified GitHub Action workflow to use ad-hoc signing for personal and technical audience use, removing the requirement for Apple Developer Program membership. Added installation instructions to README. Fixed permissions for GitHub Releases.
 - Add a small description of what is added using code snippets. Example:
 
 ```markdown
