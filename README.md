@@ -20,6 +20,15 @@ NextDNS Peek is a macOS menu bar app that shows your NextDNS stats, recent logs,
 - Error banner handling for offline, rate-limited, and unauthorized states.
 - Diagnostics panel for last refresh time and last error message.
 
+## Installation
+
+Download the latest DMG from the [Releases](https://github.com/johnlokerse/nextdns-peek/releases) page.
+
+> **Note:** This app is currently ad-hoc signed. When you first open it, you may see a warning that the developer cannot be verified.
+>
+> 1. Right-click (or Control-click) the app and select **Open**.
+> 2. In the dialog that appears, click **Open** again.
+
 ## Build & Run
 
 ```bash

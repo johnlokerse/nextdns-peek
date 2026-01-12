@@ -40,9 +40,12 @@
 - Keep the app menu-bar friendly; avoid adding dock windows unless for debugging.
 
 ## Change Summary
-- Updated: `AGENTS.md` (added explicit per-change changelog rule and summary section).
+
+- Updated: `AGENTS.md`, `README.md`, `.github/workflows/release.yml`.
 - Created: None.
-- Deleted: None.
+- Deleted: `ExportOptions.plist`.
+
+Simplified GitHub Action workflow to use ad-hoc signing for personal and technical audience use, removing the requirement for Apple Developer Program membership. Added installation instructions to README.
 - Add a small description of what is added using code snippets. Example:
 
 ```markdown

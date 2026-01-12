@@ -1,0 +1,55 @@
+name: Release
+
+on:
+    push:
+        tags:
+            - "v*"
+
+jobs:
+    release:
+        runs-on: macos-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Install dependencies
+              run: brew install create-dmg
+
+            - name: Build App
+              run: |
+                  xcodebuild build \
+                    -project NextDNSPeek.xcodeproj \
+                    -scheme NextDNSPeek \
+                    -configuration Release \
+                    -derivedDataPath build \
+                    CODE_SIGN_IDENTITY="-" \
+                    CODE_SIGNING_REQUIRED=NO \
+                    CODE_SIGNING_ALLOWED=YES
+
+            - name: Prepare Export
+              run: |
+                  mkdir -p build/Export
+                  cp -R build/Build/Products/Release/NextDNS\ Peek.app build/Export/
+
+            - name: Create DMG
+              run: |
+                  mkdir -p build/Artifact
+                  create-dmg \
+                    --volname "NextDNS Peek" \
+                    --window-pos 200 120 \
+                    --window-size 600 400 \
+                    --icon-size 100 \
+                    --icon "NextDNS Peek.app" 175 120 \
+                    --hide-extension "NextDNS Peek.app" \
+                    --app-drop-link 425 120 \
+                    "build/Artifact/NextDNS-Peek.dmg" \
+                    "build/Export/NextDNS Peek.app"
+
+            - name: Create Release
+              uses: softprops/action-gh-release@v2
+              with:
+                  files: build/Artifact/NextDNS-Peek.dmg
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
