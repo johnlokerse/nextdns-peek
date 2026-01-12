@@ -28,10 +28,10 @@ Download the latest DMG from the [Releases](https://github.com/johnlokerse/nextd
 >
 > 1. Right-click (or Control-click) the app and select **Open**.
 > 2. In the dialog that appears, click **Open** again.
-
-## Build & Run
-
-```bash
-xcodebuild -project NextDNSPeek.xcodeproj -scheme NextDNSPeek -configuration Debug -derivedDataPath build
-open "build/Build/Products/Debug/NextDNS Peek.app"
-```
+>
+> If the "Open" button still doesn't appear:
+>
+> 1. Open **System Settings** > **Privacy & Security**.
+> 2. Scroll down to the **Security** section.
+> 3. Click **Open Anyway** next to the message about NextDNS Peek.
+> 4. Enter your password and confirm by clicking **Open**.
