@@ -34,6 +34,7 @@
 		4C71A9F3918D4594862F9A1E /* LogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83733A21AE0540C0BFE421FC /* LogsListView.swift */; };
 		33F996A8CE4B4ABDB4527B30 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CFCC39C1B4AFB990129D9 /* PreferencesView.swift */; };
 		CD4A1E8657B04B11BA70341D /* StatsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA08B6669B2422AA6D71CF1 /* StatsSummaryView.swift */; };
+		FFAA00122233445566778899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAA00112233445566778899 /* Assets.xcassets */; };
 		91539EC3C5FF4CC48473F9F4 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384BCB1DF589409192E09054 /* AppKit.framework */; };
 		1213FA7B79D44A4BB4F16290 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D665E937B04D5A85A0FE4D /* SwiftUI.framework */; };
 		F71F29930FEF46C380478759 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF7521DF8E4AC08D337DCB /* Combine.framework */; };
@@ -75,6 +76,7 @@
 		94DF7521DF8E4AC08D337DCB /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
 		60106DE52A2F4F9E9C8B32BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E6185FB01D7D4EE497C9F88D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFAA00112233445566778899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -104,6 +106,7 @@
 		803C28BED889487E89912861 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FFAA00112233445566778899 /* Assets.xcassets */,
 				E6185FB01D7D4EE497C9F88D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFAA00122233445566778899 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +353,7 @@
 		7905F7B259AE40F3B1215665 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -366,7 +370,7 @@
 		57216F8CB2C043C98468AE0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
